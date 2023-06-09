@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_home.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Animal App!"
+        android:textSize="24sp"
+        android:textColor="@color/secondaryTextColor"
+        android:textStyle="bold"
+
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn about different animals and their characteristics."
+        android:textSize="18sp"
+        android:textColor="@color/secondaryTextColor"
+
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore the animal list to discover fascinating creatures from around the world."
+        android:textSize="18sp"
+        android:textColor="@color/secondaryTextColor"
+        />
+
+</LinearLayout>
+

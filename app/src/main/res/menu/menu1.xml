@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main"
+        android:icon="@drawable/ic_menu_hamburger"
+        android:title="Menu"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/menu_animalList"
+                android:title="Animal List"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/menu_about"
+                android:title="About"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+</menu>
