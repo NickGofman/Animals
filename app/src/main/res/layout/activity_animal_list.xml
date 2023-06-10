@@ -6,7 +6,19 @@
     android:orientation="vertical"
     tools:context=".animalList">
 
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:contentDescription="Spinner"
+        android:id="@+id/mySpinner"/>
 
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoComplet"
+        android:hint="filter by Name"
+        />
     <ListView
         android:id="@+id/animal_list"
         android:layout_width="match_parent"

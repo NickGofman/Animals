@@ -30,7 +30,7 @@
         />
     <Button
         android:id="@+id/btn_add_animal"
-        android:text="Add To Zoo"
+        android:text="Make Sound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
