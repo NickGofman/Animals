@@ -1,40 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- activity_home.xml -->
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="16dp"
-    android:background="@android:color/white">
+    tools:context=".MainActivity">
 
-    <TextView
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:contentDescription="Spinner"
+        android:id="@+id/mySpinner"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:contentDescription="Spinner"
+        android:id="@+id/agesSpinner"/>
+
+    <AutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the Animal App!"
-        android:textSize="24sp"
-        android:textColor="@color/secondaryTextColor"
-        android:textStyle="bold"
+        android:id="@+id/autoComplet"
+        android:hint="filter by Name" />
 
-        android:paddingBottom="16dp" />
-
-    <TextView
+    <AutoCompleteTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Learn about different animals and their characteristics."
-        android:textSize="18sp"
-        android:textColor="@color/secondaryTextColor"
+        android:id="@+id/autoCompleteLocation"
+        android:hint="filter by Favorite Location" />
 
-        android:paddingBottom="8dp" />
+    <ListView
+        android:id="@+id/animal_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Explore the animal list to discover fascinating creatures from around the world."
-        android:textSize="18sp"
-        android:textColor="@color/secondaryTextColor"
-        />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/showOldestBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:text="Show Oldest Animal Info" />
+
+        <Button
+            android:id="@+id/goToZooBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:text="Go to Zoo" />
+    </LinearLayout>
 
 </LinearLayout>
-

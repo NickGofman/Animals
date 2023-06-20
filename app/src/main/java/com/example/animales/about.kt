@@ -42,10 +42,9 @@ class about : AppCompatActivity() {
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.menu_animalList -> {
-                var intent = Intent(this,animalList::class.java)
+            R.id.menu_animalList-> {
+                var intent = Intent(this,MainActivity::class.java)
                 startActivity(intent)
-
                 true
             }
             R.id.menu_about -> {
